@@ -65,6 +65,8 @@
   function removeTransition(e) {
     if (e.propertyName !== "transform") return
     e.target.classList.remove('playing')
+    // Another alternative if not using arrow functions is
+    // this.classList.remove('playing')
   }
 
   function onKeyDown(e) {
